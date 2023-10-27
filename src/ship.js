@@ -18,7 +18,8 @@ const ship = (length) => {
 
     return {
         hit,
-        isSunk
+        isSunk,
+        length
     }
 }
 
