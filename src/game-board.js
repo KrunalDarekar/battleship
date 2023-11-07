@@ -2,11 +2,11 @@ import ship from "./ship"
 
 const gameBoard = () => {
     const grid = []
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i < 10; i++) {
         grid.push([])
     }
     grid.forEach(element => {
-        for (let i = 0; i <= 10; i++) {
+        for (let i = 0; i < 10; i++) {
             element.push({
                 isOccupiedByAShip: false,
                 isAttacked: false,
