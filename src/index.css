@@ -1,0 +1,26 @@
+.player-name-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.board-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.human-player-board, .computer-player-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 30vw;
+    height: 30vw;
+}
+
+.human-player-board > div, .computer-player-board > div {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.human-player-board > .ship-here {
+    background-color: aqua;
+}
