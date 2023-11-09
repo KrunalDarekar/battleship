@@ -8,7 +8,7 @@
     justify-content: space-around;
 }
 
-.human-player-board, .computer-player-board {
+.player1-board, .player2-board {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -16,11 +16,20 @@
     height: 30vw;
 }
 
-.human-player-board > div, .computer-player-board > div {
+.player1-board > div, .player2-board > div {
     background-color: white;
     border: 1px solid black;
 }
 
-.human-player-board > .ship-here {
+.player1-board > .ship-here {
     background-color: aqua;
+}
+
+.player1-board > .hit, .player2-board > .hit {
+    color: red;
+    background-color: lightcoral;
+}
+
+.hit.ship-here {
+    border-color: red;
 }
