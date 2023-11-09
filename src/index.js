@@ -83,13 +83,15 @@ const newGame = (player1, gameBoard1, player2, gameBoard2) => {
         currPlayer == player1 ? currPlayer = player2 : currPlayer = player1
     }
 
-    while(!winner){
+    while(true){
         if (gameBoard1.haveAllShipsSunk()) {
             alert('player 2 won')
             winner = player2
+            break
         } else if (gameBoard2.haveAllShipsSunk()) {
             alert('player 1 won')
             winner = player1
+            break
         } else {
             if (currPlayer == player1) {
                 gameMessage.textContent = `${player1.name}'s turn`
